@@ -32,7 +32,7 @@ public class BankAccount {
 
     public void deposit(double amount) {
         //add amount to balance
-       this.balance=amount;
+       this.balance +=amount;
     }
 
     public void withdraw(double amount) throws Exception {
@@ -46,14 +46,15 @@ public class BankAccount {
     }
 
     public String getName() {
-        return name;
+        return this.name;
     }
 
+
     public double getBalance() {
-        return balance;
+        return this.balance;
     }
 
     public double getMinBalance() {
-        return minBalance;
+        return this.minBalance;
     }
 }
