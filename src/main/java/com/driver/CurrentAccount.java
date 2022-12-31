@@ -23,7 +23,7 @@ public class CurrentAccount extends BankAccount{
             if(rearrangeId == ""){
                 throw new Exception("Valid License can not be generated");
             }
-
+            this.tradeLicenseId=rearrangeId;
         }
     }
     public String rearrangeString(String str){
