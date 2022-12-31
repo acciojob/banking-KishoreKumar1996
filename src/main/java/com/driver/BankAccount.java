@@ -24,11 +24,10 @@ public class BankAccount {
             for(Accnum="" ; sum > 9;sum-=9){
                 Accnum=Accnum+"9";
             }
-            for(Accnum=Accnum+sum;Accnum.length() < digits;Accnum=Accnum +"0"){
-                return Accnum;
+            for(Accnum=Accnum+sum;Accnum.length() < digits; Accnum=Accnum +"0") {
             }
+                return Accnum;
         }
-        return null;
     }
 
     public void deposit(double amount) {
